@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Charts",
+    "\\src\\components\\ChartScreen",
+    "\\src\\components\\Footer",
+    "\\src\\components\\MainCards",
+    "\\src\\components\\MainContainer",
+    "\\src\\components\\Navbar",
+    "\\src\\components\\SideBar"
+  ],
+  "SelectedNode": "\\src\\components\\ChartScreen\\ChartScreen.js",
+  "PreviewInSolutionExplorer": false
+}

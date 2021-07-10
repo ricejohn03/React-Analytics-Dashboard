@@ -1,0 +1,36 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social-links {
+   padding: .8rem;
+}
+
+.social-link {
+    font-size: 1.3rem;
+    color: #a5aaad;
+    margin: 0px 4px;
+}
+
+.social-links :hover {
+    cursor: pointer;
+    color: #32a175;
+    transition: all .5s;
+}
+
+.copy {
+    font-size: 1.2rem;
+    color: #a5aaad;
+}
