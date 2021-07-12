@@ -4,15 +4,15 @@ import './SideBar.css'
 const SideBar = ({ togglenav, setToggleNav }) => {
 
     const style = { color: "white", fontSize: "1.2em", marginRight: "10px", }
-    const responsiveNav = togglenav === true ? 'sidebar-resonsive' : ''
+    const responsiveNav = togglenav === true ? 'sidebar-resonsive slide-in' : ''
 
     return (
-        <div  className={`sidebar ${responsiveNav}`}>
+        <div className={`sidebar ${responsiveNav}`}>
             <div className='sidebar-title'>
                 <div className='sidebar-img'>
                 </div>
                 <h1>Influence<span>Byte</span> </h1>
-                <FaTimes size={15} onClick={() => setToggleNav(!togglenav)} />
+                <FaTimes className='close-sidebar' size={15} onClick={() => setToggleNav(!togglenav)} />
             </div>
 
             <div class="sidebar-menu" >

@@ -8,7 +8,7 @@ const Navbar = ({ togglenav, setToggleNav }) => {
     return (
         <div className="navbar">
             <div className="nav-icon" onClick={() => setToggleNav(!togglenav)} >
-                <FaBars style={{ className: "nav-icon" }} />
+                <FaBars style={{ className: "nav-icon", cursor:'pointer'}} />
             </div>
             <div className="navbar-left">
                 <a >Subscribers</a>
@@ -18,7 +18,7 @@ const Navbar = ({ togglenav, setToggleNav }) => {
             <div className="navbar-right">
                 <FaSearch style={navright} />
                 <FaRegClock style={navright}/>
-                <FaRegUser style={navright}/>
+                <img className='you-icon' src="https://media-exp3.licdn.com/dms/image/C5603AQEC89fm0Y7hug/profile-displayphoto-shrink_200_200/0/1517512304001?e=1631750400&v=beta&t=Ia_SOWJzYynnnS0L-dLYhDXCY7w2Zv5PC0FyduXo3qU"/>
             </div>
         </div>
         )

@@ -8,8 +8,10 @@
 .line-chart {
     display: flex;
     align-items: center;
-    justify-content:left;
+    justify-content: left;
     width: 100%;
+    overflow: hidden;
+    flex-wrap: nowrap;
 }
 .charts-left {
     padding: 25px;

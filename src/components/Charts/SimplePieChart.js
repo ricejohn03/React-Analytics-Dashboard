@@ -25,7 +25,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 const SimplePieChart = () => {
 	return (
-		<ResponsiveContainer width="100%" aspect={1.5}>
+		<ResponsiveContainer width="99%" aspect={1.5}>
 			<PieChart>
 				<Pie
 					data={data}
