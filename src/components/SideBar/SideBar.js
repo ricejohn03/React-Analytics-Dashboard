@@ -1,18 +1,20 @@
 import { FaPowerOff, FaShoppingBag, FaMobileAlt, FaShareSquare, FaTimes, FaHome, FaUserSecret, FaRegBuilding, FaWalking } from 'react-icons/fa'
 import './SideBar.css'
 
-const SideBar = () => {
+const SideBar = ({ togglenav, setToggleNav }) => {
+
     const style = { color: "white", fontSize: "1.2em", marginRight: "10px", }
+    const responsiveNav = togglenav === true ? 'sidebar-resonsive' : ''
 
     return (
-        <div className='sidebar'>
+        <div  className={`sidebar ${responsiveNav}`}>
             <div className='sidebar-title'>
                 <div className='sidebar-img'>
                 </div>
                 <h1>Influence<span>Byte</span> </h1>
-                <FaTimes size={15} />
-
+                <FaTimes size={15} onClick={() => setToggleNav(!togglenav)} />
             </div>
+
             <div class="sidebar-menu" >
                 <div className='sidebar-link active-menu-link'>
                     <FaHome style={style}/>

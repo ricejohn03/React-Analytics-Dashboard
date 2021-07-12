@@ -1,12 +1,13 @@
 import { FaBars, FaSearch, FaRegClock, FaRegUser } from "react-icons/fa";
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ togglenav, setToggleNav }) => {
     const navIcon = {  color: '#a5aaad', size: '26px'}
     const navright = { padding: "5px 5px", margin: "0px 3px", color: '#a5aaad', borderRadius: "50px", background: "#ffffff", boxShadow: "2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff" }
+
     return (
         <div className="navbar">
-            <div className="nav-icon" >
+            <div className="nav-icon" onClick={() => setToggleNav(!togglenav)} >
                 <FaBars style={{ className: "nav-icon" }} />
             </div>
             <div className="navbar-left">
